@@ -1,0 +1,12 @@
+
+mutation CreateNewAlbum {
+  createAlbum(input: { title: "My Awesome New Album", userId: "4" }) {
+    __typename
+    id
+    title
+    user {
+      __typename
+      name
+    }
+  }
+}

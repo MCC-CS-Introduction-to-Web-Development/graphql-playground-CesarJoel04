@@ -1,0 +1,12 @@
+
+query GetSpecificAlbum {
+  album(id: "4") {
+    __typename
+    id
+    title
+    user {
+      __typename
+      name
+    }
+  }
+}
